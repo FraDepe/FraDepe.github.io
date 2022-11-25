@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://FraDepe.github.io/posts/first_post/</loc>
-    <lastmod>2022-11-24T19:54:52+01:00</lastmod>
-  </url><url>
-    <loc>https://FraDepe.github.io/</loc>
-    <lastmod>2022-11-24T19:54:52+01:00</lastmod>
-  </url><url>
-    <loc>https://FraDepe.github.io/posts/</loc>
-    <lastmod>2022-11-24T19:54:52+01:00</lastmod>
+    <loc>https://FraDepe.github.io/about/</loc>
   </url><url>
     <loc>https://FraDepe.github.io/categories/</loc>
   </url><url>
+    <loc>https://FraDepe.github.io/</loc>
+  </url><url>
+    <loc>https://FraDepe.github.io/projects/</loc>
+  </url><url>
+    <loc>https://FraDepe.github.io/projects/restaurant_manager/</loc>
+  </url><url>
     <loc>https://FraDepe.github.io/tags/</loc>
+  </url><url>
+    <loc>https://FraDepe.github.io/projects/tatooine/</loc>
+  </url><url>
+    <loc>https://FraDepe.github.io/projects/wasa_photo/</loc>
   </url>
 </urlset>

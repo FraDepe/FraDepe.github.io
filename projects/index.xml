@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Francesco De Persio</title>
-    <link>https://FraDepe.github.io/</link>
-    <description>Recent content on Francesco De Persio</description>
+    <title>Projects on Francesco De Persio</title>
+    <link>https://FraDepe.github.io/projects/</link>
+    <description>Recent content in Projects on Francesco De Persio</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://FraDepe.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://FraDepe.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Restaurant Manager</title>
       <link>https://FraDepe.github.io/projects/restaurant_manager/</link>

@@ -1,5 +1,5 @@
 :root {
-  --dark-primary-color: 34, 39, 46;
+  --dark-primary-color: 28, 28, 28;
   --dark-secondary-color: #2d333b;
   --dark-tertiary-color: #646464;
   --dark-text-color: white;
@@ -84,7 +84,7 @@ pre {
 }
 
 .header-shadow {
-  box-shadow: rgb(33, 38, 45) 0px -1px 0px 0px inset;
+  box-shadow: rgb(27, 27, 27) 0px -1px 0px 0px inset;
 }
 
 /* TODO: Check if this is needed or not */

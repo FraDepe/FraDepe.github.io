@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #F0CE00;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>Restaurant Manager</title>
+    <meta name="description" content="Computer science student at La Sapienza">
+    <meta name="keywords" content='blog, gokarna, hugo'>
+
+    <meta property="og:url" content="https://FraDepe.github.io/projects/moneyball/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="moneyball">
+    <meta property="og:description" content="Computer science student at La Sapienza">
+    <meta property="og:image" content="/img/avatar.webp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="moneyball">
+    <meta name="twitter:description" content="Computer science student at La Sapienza">
+    <meta property="twitter:domain" content="https://FraDepe.github.io/projects/moneyball/">
+    <meta property="twitter:url" content="https://FraDepe.github.io/projects/moneyball/">
+    <meta name="twitter:image" content="/img/avatar.webp">
+
+    <link rel="icon" href="/img/favicon.ico">
+    
+    <link rel="canonical" href="https://FraDepe.github.io/projects/moneyball/" />
+
+    <link rel="stylesheet" type="text/css" href="https://FraDepe.github.io/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://FraDepe.github.io/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://FraDepe.github.io/css/dark.css">
+
+    <script src="https://FraDepe.github.io/js/svg-injector.min.js"></script>
+    <script src="https://FraDepe.github.io/js/feather-icons.min.js"></script>
+    <script src="https://FraDepe.github.io/js/main.js"></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://FraDepe.github.io">
+                <img src="https://FraDepe.github.io/img/avatar.webp" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://FraDepe.github.io">Francesco De Persio</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://FraDepe.github.io/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://FraDepe.github.io/about/"><span data-feather='book'></span> About </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://FraDepe.github.io/projects/"><span data-feather='code'></span> Projects </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://FraDepe.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/FraDepe"><span data-feather='github'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://FraDepe.github.io/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://FraDepe.github.io/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://FraDepe.github.io/about/"><span data-feather='book'></span> About </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://FraDepe.github.io/projects/"><span data-feather='code'></span> Projects </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://FraDepe.github.io/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/FraDepe"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://FraDepe.github.io/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    
+
+    <div class="post container">
+
+        <div class="post-header-section">
+            <h1><a href="https://github.com/FraDepe/MoneyBall">Football transfer market price forecasting</a></h1>
+        </div>
+    
+        <div class="post-content">
+            <p>
+                <h1 id="moneyball">MoneyBall</h1>
+                <h2 id="-football-transfer-market-price-forecasting">⚽ Football transfer market price forecasting</h2>
+
+                <blockquote>
+                    <p><strong>MoneyBall Edition:</strong> Forecasting football players&#39; market values using deep neural networks (DNN).</p>
+                </blockquote>
+                
+                <p>
+                    <img src="https://img.shields.io/badge/Python-%3C=_3.12-blue?style=for-the-badge" alt="Python">
+                    <img src="https://img.shields.io/badge/TensorFlow-Keras-orange?style=for-the-badge" alt="TensorFlow">
+                    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
+                </p>
+
+                <h2 id="-introduction">📖 Introduction</h2>
+
+                <p>This project applies <strong>Deep Learning</strong> to football economics. The task is to forecast the evolution of football players&#39; market values over time, simulating future scenarios or testing predictive capabilities on historical data.</p>
+                <p>Unlike standard linear models like ARIMA, this system uses varius DNN models such as <strong>LSTM (Long Short-Term Memory)</strong>, <strong>Bidirectional LSTM</strong>, <strong>Gated Recurent Unit (GRU)</strong>  network capable of:</p>
+                
+                <ol>
+                    <li>Learning complex temporal patterns from price history (one value per year, the max one);</li>
+                    <li>Integrating <strong>biological age</strong> as a deterministic factor for value growth or decline;</li>
+                </ol>
+
+                <h2 id="-methodology-architecture">🧠 Methodology &amp; Architecture</h2>
+                
+                <p>The DNN models moves beyond simple price trend analysis by understanding the context of player aging.</p>
+                
+                <h3 id="input-features">Input Features</h3>
+                
+                <p>The DNN models are <strong>multivariate</strong>. For each time step, it processes:</p>
+                
+                <ul>
+                    <li><strong>Market Value (Scaled Log):</strong> The market value, normalized and logarithmically transformed (to handle the variance between top players and lower-tier players).</li>
+                    <li><strong>Age (Scaled):</strong> The player&#39;s age at that specific moment.</li>
+                </ul>
+
+                <h3 id="recursive-prediction-time-travel-">Recursive Prediction (Time Travel)</h3>
+                
+                <p>To predict values 1, 2 or more years into the future, the system uses a <strong>Sliding Window</strong> approach:</p>
+                
+                <ol>
+                    <li>Predicts the value for year $T+1$.</li>
+                    <li>Deterministic calculation of the age the player will be in year $T+1$.</li>
+                    <li>Uses the predicted value and the new calculated age as input to predict year $T+2$.</li>
+                </ol>
+
+                <p>This allows the simulation of growth curves for young talents and decline curves for veterans.</p>
+                
+                <h2 id="-key-features">📊 Key Features</h2>
+                
+                <ul>
+                    <li><strong>Time Travel Simulation:</strong> By setting a <code>CUTOFF_YEAR</code> (e.g., 2018), the model <strong>trains only on past data</strong> and attempts to guess the &quot;known future&quot;, allowing for a direct comparison between <em>AI Prediction</em> and <em>Ground Truth</em>.</li>
+                    <li><strong>Age-Aware:</strong> The model learns that a value increase at 20 years old has a different weight and trajectory than an increase at 32 years old.</li>
+                    <li><strong>Visual Validation:</strong> Automatic generation of plots to visually compare performance.</li>
+                </ul>
+                
+                <h2 id="-installation">🛠️ Installation</h2>
+
+                <p>Ensure you have Python installed (version <strong>3.12 or older</strong> is recommended for compatibility). Clone the repository and install dependencies:</p>
+                <pre>
+                <code class="lang-bash">
+                git <span class="hljs-built_in">clone</span> https://github.com/FraDepe/MoneyBall.git
+                <span class="hljs-built_in">cd</span> MoneyBall
+                python -m venv venv                 <span class="hljs-comment">#Recomended</span>
+                <span class="hljs-built_in">source</span> ./venv/bin/activate (Unix)   <span class="hljs-comment">#Recomended</span>
+                pip install -r requirements.txt
+                </code>
+                </pre>
+
+                <h2 id="-project-structure">📂 Project Structure</h2>
+
+                <pre><code>
+                ├── csv
+                │   ├── grid_search_advanced_results<span class="hljs-selector-class">.csv</span>
+                │   ├── models_evaluation<span class="hljs-selector-class">.csv</span>
+                │   └── raw
+                │       ├── player_stats_all_seasons<span class="hljs-selector-class">.csv</span>
+                │       ├── player_stats_all_seasons_formatted<span class="hljs-selector-class">.csv</span>
+                │       ├── player_stats_over_time_with_birth_ga<span class="hljs-selector-class">.csv</span>
+                │       ├── players_values_over_time<span class="hljs-selector-class">.csv</span>
+                │       ├── players_values_over_time_with_birth_and_position<span class="hljs-selector-class">.csv</span>
+                │       └── players_values_over_time_with_birth<span class="hljs-selector-class">.csv</span>
+                ├── LICENSE
+                ├── plots
+                │   ├── ltsm_v1_results
+                │   ├── ltsm_v2_results
+                │   └──  raw_dataset_stats
+                ├── README<span class="hljs-selector-class">.md</span>
+                ├── requirements<span class="hljs-selector-class">.txt</span>
+                └── src
+                    ├── ArimaModel<span class="hljs-selector-class">.py</span>
+                    ├── DataProcessor<span class="hljs-selector-class">.py</span>
+                    ├── dataset_analysis<span class="hljs-selector-class">.py</span>
+                    ├── dataset<span class="hljs-selector-class">.py</span>
+                    ├── FeatureEngineer<span class="hljs-selector-class">.py</span>
+                    ├── GRUModel<span class="hljs-selector-class">.py</span>
+                    ├── LSTMModel<span class="hljs-selector-class">.py</span>
+                    ├── main<span class="hljs-selector-class">.py</span>
+                    ├── MarketValuePredictor<span class="hljs-selector-class">.py</span>
+                    └── ModelEvaluation.py
+                </code></pre><h2 id="-usage">🚀 Usage</h2>
+
+                <p>Main parameters:</p>
+
+                <pre><code class="lang-python">
+                config = {
+                        <span class="hljs-string">'cutoff_year'</span>: <span class="hljs-number">2018</span>,
+                        <span class="hljs-string">'prediction_years'</span>: <span class="hljs-number">5</span>,
+                        <span class="hljs-string">'n_steps'</span>: <span class="hljs-number">3</span>, 
+                        <span class="hljs-string">'data_frequency'</span>: <span class="hljs-string">'annual'</span>,  <span class="hljs-meta"># Correct values: {<span class="hljs-string">'annual'</span>, <span class="hljs-string">'semiannual'</span>}</span>
+                        <span class="hljs-string">'model_file'</span>: <span class="hljs-string">'lstm_model.keras'</span>, 
+                        <span class="hljs-string">'price_scaler_file'</span>: <span class="hljs-string">'price_scaler.gz'</span>,
+                        <span class="hljs-string">'age_scaler_file'</span>: <span class="hljs-string">'age_scaler.gz'</span>,
+                        <span class="hljs-string">'data_path'</span>: <span class="hljs-string">'./csv/raw/players_values_over_time_with_birth.csv'</span>,
+                        <span class="hljs-string">'force_retrain'</span>: <span class="hljs-literal">True</span>,
+                        <span class="hljs-string">'min_completeness'</span>: <span class="hljs-number">0.0</span>,  <span class="hljs-meta"># For semiannual: minimum data completeness (0.0 to 1.0)</span>
+                        <span class="hljs-string">'include_complete_validation'</span> : <span class="hljs-literal">True</span>,
+                        <span class="hljs-string">'include_random_sample_plots'</span> : <span class="hljs-literal">False</span>,
+                        <span class="hljs-string">'plot_player_id_base'</span> : None,
+                        <span class="hljs-string">'ltsm_stationarity'</span>: <span class="hljs-literal">False</span>,
+                }
+                </code></pre>
+
+                <p>To start training and evaluation:</p>
+                <pre><code class="lang-bash">
+                <span class="hljs-keyword">python</span> ./src/main.<span class="hljs-keyword">py</span>
+                </code></pre>
+
+                <p><strong>Note 1:</strong>  On the first run, the script will train the model and save the weights (.keras) and scalers (.gz). Subsequent runs will load the saved models to save time. Use parameter force_retrain to force the train of the model.</p>
+                <p><strong>Note 2:</strong>  As the code is the default is Bidirectional LSTM, to run ARIMA go to inside the main.py file and change the run_ltsm_pipeline() to run_arima_pipeline(). For the other models, like Normal LSTM or GRU, change them directly in the model attribute of the MarketValuePredictor.py class.</p>
+                
+                <h2 id="-example-output">📈 Example Output</h2>
+                
+                <p>The script outputs error metrics to evaluate reliability if include_complete_validation parameter is set to true. An example result is the following:</p>
+                
+                <pre><code class="lang-plaintext">
+                --- Evaluating model performance ---
+                MAE (<span class="hljs-keyword">Mean</span> <span class="hljs-keyword">Absolute</span> Error): € <span class="hljs-number">2</span>,<span class="hljs-number">173</span>,<span class="hljs-number">757.12</span>
+                RMSE (<span class="hljs-keyword">Root</span> <span class="hljs-keyword">Mean</span> Squared Error): € <span class="hljs-number">6</span>,<span class="hljs-number">031</span>,<span class="hljs-number">437.74</span>
+                MAPE (<span class="hljs-keyword">Mean</span> <span class="hljs-keyword">Absolute</span> Percentage Error): <span class="hljs-number">62.35</span>%
+                </code></pre>
+                
+                <p>Moreover, two choise for ploting are avalable make three plots of three random players or select a player to plit through the parameter plot_player_id_base. An example plot is the following:</p>
+                <p><img src="Figure_lstm_dzeko.png" alt="image"></p>
+    
+            </p>
+    </div>
+</div>
+
+
+
+
+        </main><footer class="footer">
+    <span>&copy; 2026 Beauty is in the eye of the beholder</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
